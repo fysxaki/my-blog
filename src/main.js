@@ -9,7 +9,7 @@ import { createPinia } from 'pinia'
 import axios from 'axios'
 import {AdminStore} from "./stores/AdminStore"
 
-axios.defaults.baseURL = "http://localhost:5000"
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 const { message, notification, dialog } = createDiscreteApi(["message", "dialog", "notification"])
 
 
