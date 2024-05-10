@@ -1,5 +1,5 @@
 # 一个有前后端的博客系统
-技术栈为Vue3+Vite+Express+Naive UI+Axios。
+技术栈为Vue3+Vite+Express+Naive UI+Axios+Typescript。
 ## 功能实现:
 1. 使用express框架构建服务端,使用snowflake算法生产id,避免id冲突的问题。
 2. 使用axios封装请求，使用promise.all方法封装多个promise请求
@@ -14,3 +14,4 @@
 3. 使用wangEditor来实现文本编辑功能，使用moment.js来管理时间状态。
 4. 在全局请求配置中，通过import.meta.env.BASE_URL环境变量区分本地和生产环境发送的请求域名，能够根据项目启
 动命令自动区分多环境。
+5. 使用Typescript重构项目，类型更加规整化。
