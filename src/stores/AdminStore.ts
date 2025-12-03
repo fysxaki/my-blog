@@ -1,5 +1,5 @@
-import { defineStore } from "pinia";
-
+import { createPinia, defineStore } from "pinia";
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 interface AdminState {
   id: number;
   account: string;
@@ -7,6 +7,7 @@ interface AdminState {
 }
 
 export const AdminStore = defineStore("admin", {
+  persist: true,
   state: (): AdminState => {
     return {
       id: 0,
@@ -17,3 +18,6 @@ export const AdminStore = defineStore("admin", {
   actions: {},
   getters: {},
 });
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
+export { pinia };
