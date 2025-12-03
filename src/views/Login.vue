@@ -45,7 +45,6 @@ let rules = {
 
 const admin = reactive({
   account: localStorage.getItem("account") || "",
-  password: localStorage.getItem("password") || "",
   remember: localStorage.getItem("remember") == 1 || false
 })
 
@@ -62,9 +61,7 @@ const login = async () => {
 
     if (admin.remember) {
       localStorage.setItem("account", admin.account)
-      localStorage.setItem("password",admin.password)
       localStorage.setItem("remember",admin.remember?1:0)
-
     }
     router.push("/dashboard")
     message.info("登陆成功")
