@@ -29,11 +29,11 @@ const routes: RouteRecordRaw[] = [
     //子路由的 path 不要以 / 开头，除非你想让这个路径完全独立于父路径。如果路径以 / 开头，它将不会追加到父路径后面，而是作为根路径。
     children: [
       {
-        path: "dashboard/category",
+        path: "category",
         component: () => import("../views/dashboard/Category.vue"),
       },
       {
-        path: "dashboard/article",
+        path: "article",
         component: () => import("../views/dashboard/Article.vue"),
       },
     ],
