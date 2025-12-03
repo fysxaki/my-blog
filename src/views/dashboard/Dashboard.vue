@@ -25,8 +25,8 @@ const adminStore = AdminStore()
 
 
 let menus = [
-  { name: "文章管理", href: "/article" },
-  { name: "分类管理", href: "/category" },
+  { name: "文章管理", href: "/dashboard/article" },
+  { name: "分类管理", href: "/dashboard/category" },
   { name: "退出", href: "logout"},
 ]
 

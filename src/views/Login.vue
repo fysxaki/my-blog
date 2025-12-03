@@ -45,6 +45,7 @@ let rules = {
 
 const admin = reactive({
   account: localStorage.getItem("account") || "",
+  password: "",
   remember: localStorage.getItem("remember") == 1 || false
 })
 
